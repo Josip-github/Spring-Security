@@ -12,4 +12,9 @@ public class TemplateController {
     public String getLoginView(){
         return "login"; //Ovaj login mora imati isti naziv kao file login.html u templates, samo bez '.html'
     }
+
+    @GetMapping("courses")
+    public String getCourses(){
+        return "courses";
+    }
 }
